@@ -2,7 +2,7 @@
   display: grid;
   padding: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-  /* transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+
   transition-timing-function: ease-out;
   transition-duration: 1s;
   column-gap: 10px;
