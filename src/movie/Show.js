@@ -7,7 +7,7 @@ function Show({ selected, hide }) {
       <div>
         <h2> {selected.Title} </h2>
         <p> {selected.Plot} </p>
-        <img src={selected.Poster} />
+        <img alt="image.." src={selected.Poster} />
         <div className="button">
           <Button onClick={hide}> close </Button>
         </div>

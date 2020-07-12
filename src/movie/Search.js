@@ -1,7 +1,7 @@
 import React from "react";
 import { Input } from "antd";
 
-function Search({ handleInput, search, selected }) {
+function Search({ handleInput, search }) {
   return (
     <div style={{ display: "grid", justifyContent: "center" }}>
       <div>
