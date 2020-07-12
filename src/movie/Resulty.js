@@ -5,7 +5,7 @@ function Resulty({ result, show }) {
     <div>
       <div onClick={() => show(result.imdbID)}>
         <div className="resulty">
-          <img alt="image.." src={result.Poster} />
+          <img src={result.Poster} alt="tasveer.." />
         </div>
 
         <h1> {result.Title} </h1>
