@@ -55,8 +55,9 @@ function MovieMain() {
 
   return (
     <div>
-      <Search handleInput={handleInput} search={search} />
-
+      <div style={{ backgroundColor: "teal", padding: "10px" }}>
+        <Search handleInput={handleInput} search={search} />
+      </div>
       <Results results={state.results} show={show} />
 
       {typeof state.selected.Title != "undefined" ? (
