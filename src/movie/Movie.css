@@ -2,7 +2,7 @@
   display: grid;
   padding: 20px;
   grid-template-columns: 1fr 1fr 1fr;
-
+  overflow-x: hidden;
   transition-timing-function: ease-out;
   transition-duration: 1s;
   column-gap: 10px;
@@ -13,19 +13,26 @@
   background-color: lavender;
   width: 100vw;
   height: 100vh;
-  position: fixed;
   top: 0;
   left: 0;
-  overflow-y: auto;
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.show h1,
+img,
+h2,
+h3 {
+  padding: 15px;
 }
 
-.button {
-  padding-left: 450px;
-}
 .search-box {
-  border: 2px;
+  outline: none;
+  border: 2px solid darkgrey;
   border-radius: 25px;
-  border-width: 20px;
+
+  border-color: darkgrey;
   text-align: center;
   text-shadow: 1px 1px lightsalmon;
   font-size: 20px;
@@ -33,6 +40,7 @@
   height: 45px;
   width: 200px;
 }
+
 .resulty {
   transition: background-color 0.5s;
   opacity: 0.5;

@@ -9,7 +9,7 @@ import Show from "./Show";
 const api = {
   key: "354402dc",
   coin: "14a42deb73158dc174f1bfd3d958e247",
-  baseUrl: " http://www.omdbapi.com/?apikey=354402dc",
+  baseUrl: " https://www.omdbapi.com/?apikey=354402dc",
 };
 
 function MovieMain() {
@@ -55,9 +55,17 @@ function MovieMain() {
 
   return (
     <div>
-      <div style={{ backgroundColor: "teal", padding: "10px" }}>
+      <div
+        style={{
+          padding: "10px",
+          background: "teal",
+          width: "100%",
+          height: "100%",
+        }}
+      >
         <Search handleInput={handleInput} search={search} />
       </div>
+
       <Results results={state.results} show={show} />
 
       {typeof state.selected.Title != "undefined" ? (
